@@ -17,6 +17,8 @@ New commands
 grep
 ----
 
+Usage::
+
  r4 grep [ -i ] [ -l ] [ -v ] pattern file[revRange]...
 
 Searches the named files for lines containing a match to the given
@@ -46,7 +48,8 @@ Examples::
  r4 grep pattern file#12,20
  r4 grep pattern file@release_4
 
-Note that p4 wildcards can be used, giving the ability to do recursive greps.
+Note that Perforce wildcards can be used, giving the ability to do
+recursive greps.
 
 Examples::
 
@@ -75,10 +78,25 @@ select non-matching lines.
 status
 ------
 
+Usage::
 
---------
-Examples
---------
+ status [ --no-ignore ] [ path ... ]
+
+Lists all locally modified files under the specified paths (if no paths are supplied the current working directory is used).
+
+The ``--no-ignore`` flag forces files that are ignored because they
+matched a pattern in a .r4ignore file to be printed with an 'I'
+prefix.
+
+The first column in the output is one character wide, and indicates the file's status:
+
+      '?' Item is not under version control
+      'A' Added
+      'D' Deleted
+      'M' Modified
+      'O' Opened for editing--may be unchanged, branched or integrated
+      'I' Ignored (only with --no-ignore)
+
 
 ----
 Bugs
