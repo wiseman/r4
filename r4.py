@@ -16,8 +16,6 @@ basically you need to first install the Perforce C++ API.)
 """
 from __future__ import with_statement
 
-__version__ = '$Id: //depot/users/wiseman/r4/r4.py#27 $ $Change: 17757 $'
-
 import P4
 import os
 import fnmatch
