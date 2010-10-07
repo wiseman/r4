@@ -9,7 +9,7 @@ r4
 that adds extra functionality.  You can use ``r4`` in the same way you
 use ``p4``, except there are some new commands available.
 
-I wrote r4 because I wanted the equivalent of Subversion's ``status``
+I wrote ``r4`` because I wanted the equivalent of Subversion's ``status``
 command.
 
 ------------
@@ -103,10 +103,16 @@ O         Opened for editing--may be unchanged, branched or integrated
 I         Ignored (only with --no-ignore)
 ========= ======
 
+
 ----
 Bugs
 ----
- 
+
+``r4`` does not support the general ``p4`` options that come before
+the command--options like ``-p`` to specify a different port, ``-u``
+to specify a user, etc.
+
+
 
 .. _John Wiseman: http://twitter.com/lemonodor
 .. _LICENSE.txt: http://github.com/wiseman/r4/blob/master/LICENSE.txt
