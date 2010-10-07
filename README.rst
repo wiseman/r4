@@ -90,16 +90,16 @@ prefix.
 
 The first column in the output is one character wide, and indicates the file's status:
 
---------- ------
+========= ======
 Character Status
---------- ------
+========= ======
 ?         Item is not under version control
 A         Added
 D         Deleted
 M         Modified
 O         Opened for editing--may be unchanged, branched or integrated
 I         Ignored (only with --no-ignore)
---------- ------
+========= ======
 
 ----
 Bugs
