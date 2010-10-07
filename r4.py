@@ -79,6 +79,13 @@ def get_translation_map(fromm, to):
 # machine*.
 
 def ensure_translation_map(p4=None):
+    """If we haven't done so already, builds the following maps for
+    translating between different syntaxes:
+
+    depot  <-->  client
+    client <-->  local
+    depot  <-->  local
+    """
     global g_translation_map
     if not g_translation_map:
         g_translation_map = {}
