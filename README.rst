@@ -90,6 +90,9 @@ prefix.
 
 The first column in the output is one character wide, and indicates the file's status:
 
+--------- ------
+Character Status
+--------- ------
       '?' Item is not under version control
       'A' Added
       'D' Deleted
