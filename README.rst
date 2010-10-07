@@ -9,6 +9,8 @@ r4
 that adds extra functionality.  You can use ``r4`` in the same way you
 use ``p4``, except there are some new commands available.
 
+I wrote r4 because I wanted the equivalent of Subversion's ``status``
+command.
 
 ------------
 New commands
@@ -92,7 +94,7 @@ The first column in the output is one character wide, and indicates the file's s
 
 ========= ======
 Character Status
-========= ======
+--------- ------
 ?         Item is not under version control
 A         Added
 D         Deleted
