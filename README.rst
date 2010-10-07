@@ -85,3 +85,6 @@ Bugs
 ----
  
 
+.. _John Wiseman: http://twitter.com/lemonodor
+.. _LICENSE.txt: http://github.com/wiseman/r4/blob/master/LICENSE.txt
+
