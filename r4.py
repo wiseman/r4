@@ -229,7 +229,7 @@ class R4Status(R4Command):
         return """
     status -- %s
 
-    %s
+    r4 %s
 
     Lists all locally modified files under the specified paths (if no
     paths are supplied the current working directory is used).
