@@ -284,6 +284,7 @@ class R4Status(R4Command):
             # Build a list of files that have been marked for addition
             # or deletion, but are not yet committed.
             opened_info = p4.run_opened(os.path.join(dir, '...'))
+
             # opened's output's 'depotFile' is a depot path.
             added_files = [translate_depot_to_local(i['depotFile']) for i in opened_info if i['action'] == 'add']
             deleted_files = [translate_depot_to_local(i['depotFile']) for i in opened_info if i['action'] == 'delete']
