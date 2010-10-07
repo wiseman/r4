@@ -5,8 +5,14 @@
 """
 r4 - a wrapper around p4 adding new, custom functionality.
 
-Prerequisites: 1. P4 python bindings.  I used the version at
-                  ftp://ftp.perforce.com/perforce/r09.1/bin.tools/p4python.tgz
+Prerequisites:
+
+* P4 python bindings.  I used the version at
+ftp://ftp.perforce.com/perforce/r09.1/bin.tools/p4python.tgz
+
+(The python bindings have their own installation instructions, but
+basically you need to first install the Perforce C++ API.)
+
 """
 from __future__ import with_statement
 
