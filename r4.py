@@ -131,11 +131,13 @@ def try_load_ignore_patterns(path):
                 patterns = [p[:-1] for p in patterns]
                 patterns = [p for p in patterns if len(p) > 0 and p[0] != '#']
         except IOError:
+            # Ignore errors.
             pass
     return patterns
         
 
 def is_ignored(ignore_patterns, filename):
+    "Checks whether a filename matches any ignore pattern."
     for pattern in ignore_patterns:
         if fnmatch.fnmatch(filename, pattern):
             return True
