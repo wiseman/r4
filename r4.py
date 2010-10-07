@@ -184,7 +184,7 @@ class R4Command:
         raise NotImplementedError
     def usage(self):
         raise NotImplementedError
-    def run(p4, self, command, args):
+    def run(self, p4, command, args):
         raise NotImplementedError
 
     def run_command(self, command, args, p4=None):
@@ -243,8 +243,6 @@ class R4Status(R4Command):
         for opt, value in optlist:
             if opt == '--no-ignore':
                 no_ignores = True
-            else:
-                raise InvalidOption(opt)
 
         # Was a path specified or should we just use the current
         # directory?
@@ -460,7 +458,7 @@ class R4Grep(R4Command):
         path = None
         
         # Search through files.
-        for file in args:
+        for file in files:
             annotate_info = p4.run_annotate('-a', file)
             # Each element in annotate_info is a dictionary, and there are two types:
             #
