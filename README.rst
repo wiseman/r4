@@ -12,6 +12,16 @@ use ``p4``, except there are some new commands available.
 I wrote ``r4`` because I wanted the equivalent of Subversion's ``status``
 command.
 
+
+-------------
+Prerequisites
+-------------
+
+To use ``r4``, you need to first build and install the Perforce
+`Python API`_ (which requires you to download the Perforce `C++
+API`_).
+
+
 ------------
 New commands
 ------------
@@ -116,4 +126,7 @@ to specify a user, etc.
 
 .. _John Wiseman: http://twitter.com/lemonodor
 .. _LICENSE.txt: http://github.com/wiseman/r4/blob/master/LICENSE.txt
+.. _Python API: http://www.perforce.com/perforce/loadsupp.html#api
+.. _C++ API: http://www.perforce.com/perforce/loadsupp.html#api
+
 
