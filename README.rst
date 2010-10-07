@@ -99,7 +99,7 @@ Character Status
       'M' Modified
       'O' Opened for editing--may be unchanged, branched or integrated
       'I' Ignored (only with --no-ignore)
-
+--------- ------
 
 ----
 Bugs
