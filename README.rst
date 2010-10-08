@@ -44,7 +44,6 @@ file are searched.
 Example::
 
  $ r4 grep ALL Makefile
- 
  //depot/project/Makefile#1: ALL     :=      tools
  //depot/project/Makefile#2: ALL     :=      tools scripts
  //depot/project/Makefile#3: ALL     :=      tools scripts tests
